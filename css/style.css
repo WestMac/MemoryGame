@@ -1,0 +1,102 @@
+body {
+	background: radial-gradient(circle, rgba(101,146,219,1) 29%, rgba(87,80,125,1) 100%);
+}
+
+/*wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto;
+  align-items: center;
+  justify-items:center;
+
+ }*/
+
+.container {
+
+	display:grid;
+	grid-template-columns: 140px 140px 140px 140px;
+	grid-template-rows: 140px 140px 140px 140px;
+	justify-content: center;
+	text-align: center;
+	/*height: 100vh;
+	width: 100vh;*/
+	height:750px;
+	align-content:space-around;
+	grid-column-gap: 2em;
+	background:linear-gradient(107deg,rgba(1,230,174,1) 0%, rgba(111,177,255,1) 100%);
+	margin:30px 550px 20px 550px;
+	padding: 0px 15px 0px 15px;
+	border-radius: 3%;
+	perspective: 5000px;
+}
+
+
+.card {
+	background: radial-gradient(circle, rgba(154,26,82,1) 29%, rgba(164,51,92,1) 100%);
+	border-radius: 10%;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	position: relative;
+
+}
+
+.card:active {
+	transform: scale(0.8);
+	transition: transform 0.1s;
+}
+
+
+.card.flipCard {
+	transform: rotateY(180deg);
+}
+
+.card.resetCard {
+	transform: rotateY(180deg);
+}
+.front {
+	background: radial-gradient(circle, rgba(154,26,82,1) 29%, rgba(164,51,92,1) 100%);
+	border-radius: 90%;
+	position: relative;
+	backface-visibility: hidden;
+	
+
+}
+.back {
+	transform:rotateY(180deg);
+	backface-visibility: hidden;
+	position: absolute;
+	right:0px;
+}
+
+
+h2 {
+	/*grid-column: 2/3;*/
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.reset{
+	/*grid-column: 2/3;
+	grid-row: 2/3;*/
+	position: relative;
+	top:25px;
+	left:250px;
+}
+.score {
+	position: relative;
+	margin-left:550px;
+	top:50px;
+}
+
+.licz {
+	display:flex;
+	position: relative;
+	justify-content: center;
+	font-size: 3em;
+}
+
+
+.containerHS {
+	grid-column: 1/2;
+}
