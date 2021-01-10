@@ -10,8 +10,8 @@ let fC; //Zapisz pierwsza obrocona karte
 let sC; // Zapisz druga obrocona karte
 window.onload = assign;
 
-let images = ["husky.png","husky.png","bobr.png","bobr.png","delfin.png","delfin.png","kogut.png","kogut.png",
-"kura.png","kura.png","swinia.png","swinia.png","zabka.png","zabka.png","pies.png","pies.png"];
+let images = ["assets/husky.png","assets/husky.png","assets/bobr.png","assets/bobr.png","assets/delfin.png","assets/delfin.png","assets/kogut.png","assets/kogut.png",
+"assets/kura.png","assets/kura.png","assets/swinia.png","assets/swinia.png","assets/zabka.png","assets/zabka.png","assets/pies.png","assets/pies.png"];
 let chujnia = ['a'];
 
 replayIcon.addEventListener('click', replay);
