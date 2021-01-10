@@ -3,6 +3,7 @@ let icon = document.querySelectorAll('.back');
 let replayIcon = document.querySelector('.reset');
 let count = document.querySelector('.count');
 let zegar = document.querySelector('.zegar');
+let poziom = document.querySelector('#level')
 let flipped = false; // Czy zostala obrocona karta
 let firstCard;  // Pierwsza karta
 let secondCard = false; // Druga karta
@@ -13,6 +14,14 @@ window.onload = assign;
 let images = ["assets/husky.png","assets/husky.png","assets/bobr.png","assets/bobr.png","assets/delfin.png","assets/delfin.png","assets/kogut.png","assets/kogut.png",
 "assets/kura.png","assets/kura.png","assets/swinia.png","assets/swinia.png","assets/zabka.png","assets/zabka.png","assets/pies.png","assets/pies.png"];
 let chujnia = ['a'];
+
+
+poziom.addEventListener('change', function() {
+	if(poziom.value === "hard") {
+		console.log('hard');
+	}
+})
+
 
 replayIcon.addEventListener('click', replay);
 

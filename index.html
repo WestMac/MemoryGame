@@ -5,6 +5,7 @@
       rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
 <body>
@@ -16,7 +17,10 @@
 	<span class="material-icons">star_border</span>
 	<span class="material-icons">star_border</span>
 </span>
-	
+	<SELECT id="level">
+		<option value ="normal">Normal</option>
+		<option value = "hard">Hard</option>
+	</SELECT>
 <span class="licz">
 	<span class="count">0</span>
 	<span>Moves</span>
@@ -35,7 +39,7 @@
 
 	
 
-<!-- <div class="wrapper"> -->
+<div class="wrapper">
 <div class="container">
 	
 		<div class="card" id="1">
@@ -88,9 +92,13 @@
 		<div class="card" id="16">
 			<img class = "front" alt ="Owl-Front" src="assets/sowa.png">
 			<img class = "back" alt ="Dog-back" src=""></div>
+
+			<div class="card" id="17" style = "display:none">
+			<img class = "front" alt ="Owl-Front" src="assets/sowa.png">
+			<img class = "back" alt ="Dog-back" src=""></div>
 	</div>
 </div>
-<!-- </div> -->
+</div>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
